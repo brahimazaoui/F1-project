@@ -22,12 +22,11 @@ public class MainActivity extends AppCompatActivity {
     private static final String BUNDLE_CURRENT_INDEX = "BUNDLE_CURRENT_INDEX";
     private Random mRandom;
 
-    ImageView suggestImageView;
-    TextView suggestTextView;
-    TextView suggestTitleView;
+    private ImageView suggestImageView;
+    private TextView suggestTextView;
+    private TextView suggestTitleView;
 
-
-    int [] mSuggestTitles = {
+    private int [] mSuggestTitles = {
             R.string.bangkok_title,
             R.string.london_title,
             R.string.paris_title,
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             R.string.barcelona_title
     };
 
-    int [] mSuggestPictures = {
+    private int [] mSuggestPictures = {
             R.drawable.bangkok_01,
             R.drawable.london_02,
             R.drawable.paris_03,
@@ -53,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             R.drawable.barcelona_10
     };
 
-    int [] mSuggestTexts = {
+    private int [] mSuggestTexts = {
             R.string.bangkok_description,
             R.string.london_description,
             R.string.paris_description,
@@ -66,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             R.string.barcelona_description
     };
 
-   int mCurrentIndex = -1;
+    private int mCurrentIndex = -1;
     private Log log;
 
     @Override
